@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [],
+    // Allow blob: URLs created by URL.createObjectURL for local file previews
+    dangerouslyAllowSVG: true,
+  },
 };
 
 export default nextConfig;
